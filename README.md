@@ -65,6 +65,7 @@ dj-playlist-generator/
 └── README.md
 ```
 
+```
 public/: Contains the front-end files.
   index.html: Main HTML file.
   styles.css: Styles for the front-end.
@@ -76,6 +77,7 @@ src/: Contains the back-end code.
   spotify.js: Handles Spotify API interactions.
 package.json: Project dependencies and scripts.
 README.md: Project documentation.
+```
 
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any changes.
