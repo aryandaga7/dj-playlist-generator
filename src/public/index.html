@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Playlist Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>DJ Playlist Generator</h1>
+    <form id="youtube-form">
+        <label for="youtube-link">YouTube Link:</label>
+        <input type="text" id="youtube-link" name="youtube-link" required>
+        <button type="submit">Generate Playlist</button>
+    </form>
+    <div id="playlist-result"></div>
+    <ul id="song-list"></ul> <!-- Add this line -->
+    <script src="/socket.io/socket.io.js"></script> <!-- Add this line -->
+    <script src="index.js"></script>
+</body>
+</html>

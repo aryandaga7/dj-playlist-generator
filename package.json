@@ -1,0 +1,22 @@
+{
+  "name": "dj-playlist-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@spotify/web-api-ts-sdk": "^1.2.0",
+    "axios": "^1.7.2",
+    "axios-retry": "^4.4.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "googleapis": "^140.0.1",
+    "puppeteer": "^22.12.1",
+    "socket.io": "^4.7.5"
+  }
+}
