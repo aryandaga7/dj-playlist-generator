@@ -26,16 +26,20 @@ DJ Playlist Generator is a web application that takes a YouTube link of a DJ set
    npm install
 
 3. Set up your environment variables. Create a .env file in the root directory with the following contents:
-   ```CLIENT_ID=your_spotify_client_id
+   ```
+   CLIENT_ID=your_spotify_client_id
    CLIENT_SECRET=your_spotify_client_secret
    REDIRECT_URI=http://localhost:3000/callback
    AUDD_API_KEY=your_audd_api_key
    YOUTUBE_API_KEY=your_youtube_api_key
+   ```
 
 ## Usage
 
 1. Start the server:
-   ```node src/app.js
+   ```
+   node src/app.js
+   ```
 
 2. Open your browser and go to http://localhost:3000/login to log in with your Spotify account and authorize the application.
 
@@ -46,7 +50,8 @@ DJ Playlist Generator is a web application that takes a YouTube link of a DJ set
 5. The application will process the YouTube link, identify the songs, and create a Spotify playlist.
 
 ## Project Structure
-```dj-playlist-generator/
+```
+dj-playlist-generator/
 ├── public/
 │   ├── index.html
 │   ├── styles.css
@@ -58,6 +63,7 @@ DJ Playlist Generator is a web application that takes a YouTube link of a DJ set
 │   │   ├── spotify.js
 ├── package.json
 └── README.md
+```
 
 public/: Contains the front-end files.
   index.html: Main HTML file.
