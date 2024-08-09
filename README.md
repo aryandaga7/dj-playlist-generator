@@ -1,53 +1,12 @@
 # DJ Playlist Generator
 
-DJ Playlist Generator is a web application that takes a YouTube link of a DJ set, identifies each song using the AudD API, and then creates a Spotify playlist with those songs.
+DJ Playlist Generator is a web application that allows users to generate Spotify playlists from songs identified in YouTube videos. By inputting a YouTube link, the application analyzes the video, identifies the songs using the Audd.io API, and then creates a corresponding Spotify playlist.
 
 ## Features
 
 - Identify songs from YouTube DJ sets using the AudD API.
 - Create Spotify playlists with identified songs.
 - Automate the entire process with a simple interface.
-
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-
-## Installation
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/dj-playlist-generator.git
-   cd dj-playlist-generator
-
-2. Install the dependencies:
-   npm install
-
-3. Set up your environment variables. Create a .env file in the root directory with the following contents:
-   ```
-   CLIENT_ID=your_spotify_client_id
-   CLIENT_SECRET=your_spotify_client_secret
-   REDIRECT_URI=http://localhost:3000/callback
-   AUDD_API_KEY=your_audd_api_key
-   YOUTUBE_API_KEY=your_youtube_api_key
-   ```
-
-## Usage
-
-1. Start the server:
-   ```
-   node src/app.js
-   ```
-
-2. Open your browser and go to http://localhost:3000/login to log in with your Spotify account and authorize the application.
-
-3. Once authorized, you will be redirected back to the application.
-
-4. Enter the YouTube link of the DJ set into the provided form and submit.
-
-5. The application will process the YouTube link, identify the songs, and create a Spotify playlist.
 
 ## Project Structure
 ```
@@ -79,14 +38,29 @@ package.json: Project dependencies and scripts.
 README.md: Project documentation.
 ```
 
-## Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any changes.
+## Installation
 
-1. Fork the repository.
-2. Create a new branch: git checkout -b my-branch-name.
-3. Make your changes and commit them: git commit -m 'Add some feature'.
-4. Push to the branch: git push origin my-branch-name.
-5. Submit a pull request.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/aryandaga7/dj-playlist-generator.git
+   cd dj-playlist-generator
+
+2. Install the dependencies:
+   npm install
+
+## Usage
+
+1. Start the server:
+   ```
+   npm start
+   ```
+
+2. Open your browser and go to http://localhost:3000/login to log in with your Spotify account and authorize the application.
+
+3. Input a YouTube link and generate your Spotify playlist.
+
+
+## Screenshots
 
 
 
