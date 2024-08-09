@@ -62,6 +62,8 @@ README.md: Project documentation.
 
 ## Screenshots
 
+<img width="1512" alt="dj-web" src="https://github.com/user-attachments/assets/1538cf57-9425-4185-8ec9-87eeb755e739">
+<img width="1512" alt="dj-spotify" src="https://github.com/user-attachments/assets/f26f8f61-d628-44d9-a0d6-ce8a78f04b7f">
 
 
 
