@@ -9,13 +9,16 @@ router.post('/', async (req, res) => {
 
     try {
         const response = await axios.post('http://localhost:3000/audd', { youtubeLink });
-        const { spotifyLinks, youtubeLink: ytLink } = response.data;
-
-        console.log('Songs identified:', spotifyLinks);
+        const { spotifyLinks, youtubeLink: ytLink, videoTitle } = response.data;
 
         if (spotifyLinks.length > 0) {
-            const spotifyResponse = await axios.post('http://localhost:3000/spotify/create-playlist', { spotifyLinks, youtubeLink: ytLink });
-            res.json(spotifyResponse.data);
+            try {
+                const spotifyResponse = await axios.post('http://localhost:3000/spotify/create-playlist', { spotifyLinks, youtubeLink: ytLink, videoTitle });
+                res.json(spotifyResponse.data);
+            } catch (error) {
+                console.error('Error creating playlist:', error);
+                res.status(500).json({ error: 'Error creating playlist' });
+            }
         } else {
             res.status(400).json({ error: 'No songs identified' });
         }
